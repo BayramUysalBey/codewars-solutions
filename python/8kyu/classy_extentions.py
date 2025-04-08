@@ -10,8 +10,10 @@ The name attribute is accessible in the class with self.name.
 Reference: Python docs"""
 
 # My solution
-from preloaded import Animal
+# from preloaded import Animal
 
 class Cat(Animal):
     def speak(self):
         return self.name + ' meows.'
+    
+
