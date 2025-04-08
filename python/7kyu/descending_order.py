@@ -10,3 +10,7 @@ Input: 123456789 Output: 987654321"""
 # My solution
 def Descending_Order(num):
 	return int("".join(sorted(str(num), reverse=True)))
+
+
+
+
