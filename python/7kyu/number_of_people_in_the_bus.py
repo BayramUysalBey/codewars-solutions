@@ -18,3 +18,7 @@ def number(bus_stops):
 		total_in += i
 		total_out += o
 	return total_in - total_out
+
+# My updated solution
+def number(bus_stops):
+    return sum([(i-o) for i, o in bus_stops])
