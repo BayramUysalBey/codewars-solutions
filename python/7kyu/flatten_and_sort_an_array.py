@@ -9,7 +9,7 @@ Given [[3, 2, 1], [4, 6, 5], [], [9, 7, 8]], your function should return [1, 2, 
 # My solution
 def flatten_and_sort(array):
     if array == []:
-    	return []
+        return []
     result = []
     for char in array:
         for num in char:
@@ -19,5 +19,5 @@ def flatten_and_sort(array):
 # My updated solution
 def flatten_and_sort(array):
     if array == []:
-    	return []
-    return sorted([num for char in array for num in char])
+        return []
+    return sorted([num for sublist in array for num in sublist])
