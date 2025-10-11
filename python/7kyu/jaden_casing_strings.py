@@ -10,4 +10,10 @@ Link to Jaden's former Twitter account @officialjaden via archive.org"""
 
 # My solution
 def to_jaden_case(string):
+    words = string.split() 
+    capitalized_words = [word.capitalize() for word in words]
+    return ' '.join(capitalized_words)
+
+# My updated solution
+def to_jaden_case(string):
     return ' '.join(word.capitalize() for word in string.split())
