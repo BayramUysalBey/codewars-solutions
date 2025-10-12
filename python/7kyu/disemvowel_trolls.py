@@ -10,5 +10,16 @@ Note: for this kata y isn't considered a vowel."""
 
 # My solution
 def disemvowel(string_):
+    result = []
+    vowels = "aeiouAEIOU"
+
+    for char in string_:
+        if char not in vowels:
+            result.append(char)
+
+    return "".join(result)
+
+# My updated solution
+def disemvowel(string_):
     vowels = "aeiouAEIOU"
     return "".join(char for char in string_ if char.lower() not in vowels)
