@@ -6,4 +6,9 @@ For example, when an array is passed like [19, 5, 42, 2, 77], the output should 
 
 # My solution
 def sum_two_smallest_numbers(numbers):
+    numbers1 = sorted(numbers)
+    return numbers1[0] + numbers1[1]
+
+# My updated solution
+def sum_two_smallest_numbers(numbers):
     return sum(sorted(numbers)[:2])
