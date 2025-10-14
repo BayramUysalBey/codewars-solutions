@@ -9,7 +9,12 @@ Note: The function accepts an integer and returns an integer.
 Happy Coding!"""
 
 # My solution
+def square_digits(num):
+    result = []
+    for digit in str(num):
+        result.append(int(digit)**2)
+    return int(''.join(str(x) for x in result))
 
-
+# My updated solution
 def square_digits(num):
     return ("".join(str(int(digit) ** 2) for digit in str(num)))
