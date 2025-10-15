@@ -11,5 +11,14 @@ Output string must be two numbers separated by a single space, and highest numbe
 
 # My solution
 def high_and_low(numbers):
+	result = []
+	numbers = numbers.split()
+	for number in numbers:
+		result.append(int(number))
+		result.sort(reverse=True)
+	return f"{result[0]} {result[-1]}"
+
+# My updated solution
+def high_and_low(numbers):
 	result = [int(number) for number in numbers.split()]
 	return f"{max(result)} {min(result)}"
