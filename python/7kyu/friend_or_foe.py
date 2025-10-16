@@ -12,4 +12,12 @@ Note: keep the original order of the names in the output."""
 
 # My solution
 def friend(x):
+    result = []
+    for friends in x:
+        if len(friends) == 4:
+           result.append(friends)
+    return result
+
+# My updated solution
+def friend(x):
     return [friends for friends in x if len(friends) == 4]
