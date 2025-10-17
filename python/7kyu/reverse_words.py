@@ -6,4 +6,12 @@ Examples
 
 # My solution
 def reverse_words(text):
+    s_text = text.split(" ")
+    res = []
+    for word in s_text:
+        res.append(word[::-1])
+    return " ".join(res)
+
+# My updated solution
+def reverse_words(text):
     return " ".join(t[::-1] for t in text.split(" "))
