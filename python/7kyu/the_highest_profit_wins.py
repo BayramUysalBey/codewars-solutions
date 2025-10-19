@@ -13,4 +13,9 @@ All arrays or lists will always have at least one element, so you don't need to 
 
 # My solution
 def min_max(lst):
+  result = [min(lst), max(lst)]
+  return result
+
+# My updated solution
+def min_max(lst):
     return [min(lst), max(lst)]
