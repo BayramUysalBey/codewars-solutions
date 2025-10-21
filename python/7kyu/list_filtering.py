@@ -7,4 +7,12 @@ filter_list([1,2,'aasf','1','123',123]) == [1,2,123]"""
 
 # My solution
 def filter_list(l):
+    result = []
+    for char in l :
+        if type(char) == int :
+            result.append(char)
+    return result
+
+# My updated solution 
+def filter_list(l):
     return [char for char in l if type(char) is int]
