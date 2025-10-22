@@ -10,6 +10,14 @@ Examples
 
 # My solution
 def stray(arr):
+	result = 0
+	for char in arr:
+		if arr.count(char) == 1:
+			result += char
+	return result
+
+# My updated solution
+def stray(arr):
     for x in arr:
         if arr.count(x) == 1:
             return x
