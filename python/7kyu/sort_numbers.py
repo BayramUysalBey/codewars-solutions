@@ -7,6 +7,13 @@ solution(None) # should return []"""
 
 # My solution
 def solution(nums):
+    if nums == None or nums == []:
+        return []
+    else: 
+        return sorted(nums)
+
+# My updated solution
+def solution(nums):
 	return [] if nums is None else sorted(nums)
 
 
