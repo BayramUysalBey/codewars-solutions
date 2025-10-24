@@ -6,4 +6,11 @@ If input data is invalid you should return 0 (as in no breaks are needed if we d
 
 # My solution
 def break_chocolate(n, m):
+    if n * m == 0:
+        return 0
+    else:
+        return n * m - 1
+
+# My updted solution
+def break_chocolate(n, m):
     return 0 if n * m == 0 else n * m -1
