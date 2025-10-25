@@ -11,4 +11,12 @@ Examples
 
 # My solution
 def is_anagram(test, original):
+    test = test.lower()
+    original = original.lower()
+    sorted_str1 = sorted(test)
+    sorted_str2 = sorted(original)
+    return sorted_str1 == sorted_str2
+
+# My updated solution
+def is_anagram(test, original):
     return sorted(test.lower()) == sorted(original.lower()) 
