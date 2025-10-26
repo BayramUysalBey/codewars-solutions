@@ -10,4 +10,9 @@ All of the strings in the array passed to your function will be different length
 
 # My solution
 def sort_by_length(arr):
+    sorted_arr = sorted(arr, key=len)
+    return sorted_arr
+
+# My updated solution
+def sort_by_length(arr):
     return sorted(arr, key=len)
