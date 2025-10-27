@@ -5,4 +5,12 @@ Example (Input --> Output)
 
 # My solution
 def capitals(word):
+    result = []
+    for i, char in enumerate(word):
+        if char.isupper():
+            result.append(i)
+    return result
+
+# My updated solution
+def capitals(word):
 	return [i for i, char in enumerate(word) if char.isupper()]
