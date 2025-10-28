@@ -11,4 +11,14 @@ Fundamentals"""
 
 # My solution
 def sum_digits(number):
+    result = 0
+    abs_number = abs(number)
+    
+    l_number = list(str(abs_number))
+    for char in l_number:
+        result += int(char)
+    return result
+
+# My updated solution
+def sum_digits(number):
 	return sum(int(char) for char in str(abs(number)))
