@@ -10,5 +10,10 @@ For example (Input --> Output):
 
 # My solution
 def two_oldest_ages(ages):
+    s_ages = sorted(ages, reverse=True)
+    return [s_ages[1], s_ages[0]]
+
+# My updated solution
+def two_oldest_ages(ages):
     s_ages = sorted(ages)
     return s_ages[-2:]
