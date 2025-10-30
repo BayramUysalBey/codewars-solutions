@@ -4,4 +4,12 @@ All values in the array will be integers. Return the good values in the order th
 
 # My soution
 def no_odds(values):
+    result = []
+    for char in values:
+        if char % 2 == 0:
+            result.append(char)
+    return result
+
+# My updated solution
+def no_odds(values):
     return [char for char in values if char % 2 == 0]
