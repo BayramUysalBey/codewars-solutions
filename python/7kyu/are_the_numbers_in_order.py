@@ -14,4 +14,11 @@ N.B. If your solution passes all fixed tests but fails at the random tests, make
 
 # My solution
 def in_asc_order(arr):
+	if arr == sorted(arr):
+		return True
+	else:
+		return False
+
+# My updated solution
+def in_asc_order(arr):
     return arr == sorted(arr)
