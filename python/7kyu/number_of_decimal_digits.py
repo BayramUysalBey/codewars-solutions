@@ -4,4 +4,10 @@ All inputs will be valid."""
 
 # My solution
 def digits(n):
+	l_n = list(str(n))
+	len_n = len(l_n)
+	return len_n
+
+# My updated solution
+def digits(n):
 	return len(str(n))
