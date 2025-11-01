@@ -22,3 +22,4 @@ def in_asc_order(arr):
 # My updated solution
 def in_asc_order(arr):
     return arr == sorted(arr)
+
