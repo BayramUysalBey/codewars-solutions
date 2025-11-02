@@ -7,4 +7,11 @@ Examples
 
 # My solution
 def min_value(digits):
+	set_d = sorted(set(digits))
+	
+
+	return int("".join(map(str, set_d)))
+
+# My updated solution
+def min_value(digits):
     return int("".join(map(str, sorted(set(digits)))))
