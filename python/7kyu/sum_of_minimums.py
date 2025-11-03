@@ -15,4 +15,12 @@ ENJOY CODING :)"""
 
 # My solution
 def sum_of_minimums(numbers):
+	res = []
+	for num in numbers:
+		res.append(min(num))
+
+	return sum(res)
+
+# My updated solution
+def sum_of_minimums(numbers):
 	return sum(min(num) for num in numbers)
