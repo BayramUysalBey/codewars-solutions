@@ -9,4 +9,11 @@ Examples: (Input --> output)
 
 # My solution
 def sum_cubes(n):
+    res = 0
+    for i in range(1, n + 1):
+        res += i ** 3
+    return res
+
+# My updated solution
+def sum_cubes(n):
     return sum(i ** 3 for i in range(1, n + 1))
