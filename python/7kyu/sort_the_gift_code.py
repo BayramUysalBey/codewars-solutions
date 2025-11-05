@@ -13,4 +13,15 @@ Examples (Input -- => Output):
 
 # My solution
 def sort_gift_code(code):
+
+	res = []
+	
+	letters = "abcdefghijklmnopqrstuvwxyz"
+	code_l = code.lower()
+	for char in code_l:
+		res.append(char)
+	return "".join(sorted(res))
+
+# My updated solution
+def sort_gift_code(code):
     return "".join(sorted(code.lower()))
