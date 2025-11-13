@@ -9,5 +9,15 @@ You will be given a string of numbers and letters mixed up, you have to return a
 
 # My solution
 def filter_string(st):
+    res = []
+    l_st = list(st)
+    numbers = "0123456789"
+    for char in l_st:
+        if char in numbers:
+            res.append(char)
+    return int("".join(res))
+
+# My updated solution
+def filter_string(st):
     numbers = "0123456789"
     return int("".join(char for char in st if char in numbers))
