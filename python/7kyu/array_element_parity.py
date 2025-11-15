@@ -20,3 +20,7 @@ def solve(arr):
     for num in arr:
         if num and -num not in arr:
             return num
+        
+# My updated solution
+def solve(arr):
+    return sum(set(arr))
