@@ -11,3 +11,7 @@ def even_last(numbers):
     for index, num in enumerate(numbers):
         if index % 2  == 0: result += num
     return result * numbers[-1]
+
+# My updated solution
+def even_last(numbers):
+    return sum(num for index, num in enumerate(numbers) if index % 2 == 0) * numbers[-1] if numbers else 0
