@@ -9,3 +9,8 @@ from math import *
 def get_average(marks):
     res = sum(marks) / len(marks)
     return floor(res)
+
+# My updated solution
+from math import floor
+def get_average(marks):
+    return floor(sum(marks) / len(marks))
