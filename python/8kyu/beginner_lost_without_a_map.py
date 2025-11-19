@@ -6,4 +6,12 @@ For example:
 
 # My solution
 def maps(a):
+    res = []
+    for b in a:
+        if b in a:
+            res.append(b * 2)
+    return res
+
+# My updated solution
+def maps(a):
     return [x * 2 for x in a]
