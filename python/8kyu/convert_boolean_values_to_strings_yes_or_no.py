@@ -2,4 +2,11 @@
 
 # My solution
 def bool_to_word(boolean):
+	if boolean is True:
+		return "Yes"
+	else:
+		return "No"
+
+# My updated solution
+def bool_to_word(boolean):
     return "Yes" if boolean else "No"
