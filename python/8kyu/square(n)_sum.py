@@ -4,4 +4,11 @@ For example, for [1, 2, 2] it should return 9 because 1 ** 2 + 2 ** 2 + 2 ** 2 =
 
 # My solution
 def square_sum(numbers):
+    sum_of_squares = 0
+    for number in numbers:
+        sum_of_squares += number ** 2
+    return sum_of_squares
+
+# My updated solution
+def square_sum(numbers):
     return sum(num**2 for num in numbers)
