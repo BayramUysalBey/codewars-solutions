@@ -6,3 +6,8 @@ Sure, this is about as easy as it gets. But how clever can you be to create the 
 # My solution
 def greet():
 	return "hello world!"
+print(greet())
+
+# My updated solution
+def greet():
+	return "hello world!"
