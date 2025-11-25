@@ -20,4 +20,11 @@ Advanced users may find this extremely easy and can easily write this in one lin
 
 # My solution
 def sum_array(a):
-  return sum(a)
+	sum = 0
+	for i in a:
+		sum += i
+	return sum
+
+# My updaed solution
+def sum_array(a):
+	return sum(a)
