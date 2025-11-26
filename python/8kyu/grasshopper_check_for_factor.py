@@ -15,4 +15,11 @@ Note: base is a non-negative number, factor is a positive number."""
 
 # My solution
 def check_for_factor(base, factor):
+    if base % factor == 0:
+        return True
+    else:
+        return False
+
+# My updated solution
+def check_for_factor(base, factor):
     return base % factor == 0
