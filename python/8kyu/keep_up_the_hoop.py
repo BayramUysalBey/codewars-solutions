@@ -7,4 +7,11 @@ If he doesn't get 10 hoops, return the string "Keep at it until you get it"."""
 
 # My solution
 def hoop_count(n):
+    if n >= 10:
+        return "Great, now move on to tricks"
+    elif n < 10:
+        return "Keep at it until you get it"
+
+# My updated solution
+def hoop_count(n):
     return "Great, now move on to tricks" if n >= 10 else "Keep at it until you get it"
