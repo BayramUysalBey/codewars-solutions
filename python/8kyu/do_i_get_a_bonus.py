@@ -8,5 +8,12 @@ Return the total figure the individual will receive as a string prefixed with "Â
 
 # My solution
 def bonus_time(salary, bonus):
+    if bonus == True:
+        return f"${salary * 10}"
+    elif bonus == False:
+        return f"${salary}"
+
+# My updated solution
+def bonus_time(salary, bonus):
     if bonus == True: return f"${salary * 10}"
     else: return f"${salary}"
