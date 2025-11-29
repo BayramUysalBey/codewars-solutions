@@ -5,4 +5,9 @@ Can you help me fix the function?"""
 
 # My solution
 def add_five(num):
+    total = num + 5
+    return total
+
+# My updated solution
+def add_five(num):
     return num + 5
