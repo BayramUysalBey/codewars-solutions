@@ -2,4 +2,10 @@
 
 # My solution
 def mystery():
+    results = {
+    'sanity': 'Hello'}
+    return results
+
+# My updated solution
+def mystery():
     return {'sanity': 'Hello'}
