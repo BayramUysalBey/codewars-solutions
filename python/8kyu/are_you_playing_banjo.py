@@ -8,7 +8,14 @@ name + " does not play banjo"
 Names given are always valid strings."""
 
 # My solution
+def are_you_playing_banjo(name):
+	name.split()
+	if name[0] == "r" or name[0] == "R":
+		return f"{name} plays banjo"
+	else:
+		return f"{name} does not play banjo"
 
+# My uppdated solution
 def areYouPlayingBanjo(name):
     if name[0].lower() == "r": return f"{name} plays banjo"
     else: return f"{name} does not play banjo"
