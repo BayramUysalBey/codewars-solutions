@@ -4,6 +4,13 @@ Return true if yes, false otherwise :)"""
 
 # My solution
 def hero(bullets, dragons):
+    if dragons * 2 <= bullets:
+        return True
+    else:
+        return False
+    
+# My updated solution	
+def hero(bullets, dragons):
     return bullets >= dragons * 2
     
     
