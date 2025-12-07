@@ -10,5 +10,12 @@ patrick feeney => P.F"""
 
 # My solution
 def abbrev_name(name):
+    words = name.split(" ")
+    letters = [word[0].upper() for word in words]
+    
+    return ".".join(letters)
+
+# M updated solution
+def abbrev_name(name):
     name = name.split(" ")
     return ".".join([char[0].upper() for char in name])
