@@ -6,4 +6,12 @@ Function should return true if it is possible and false if not."""
 
 # My solution
 def zero_fuel(distance_to_pump, mpg, fuel_left):
+	
+	if fuel_left * mpg >= distance_to_pump:
+		return True
+	else:
+		return False
+
+# My updated solution
+def zero_fuel(distance_to_pump, mpg, fuel_left):
     return fuel_left * mpg >= distance_to_pump
