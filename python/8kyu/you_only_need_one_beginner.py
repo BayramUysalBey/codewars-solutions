@@ -6,4 +6,11 @@ Return true if the array contains the value, false if not."""
 
 # My solution
 def check(seq, elem):
+    if elem in seq:
+        return True
+    else:
+        return False
+    
+# My updated solution
+def check(seq, elem):
     return True if elem in seq else False
