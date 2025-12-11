@@ -8,4 +8,9 @@ https://en.wikipedia.org/wiki/Triangle"""
 
 # My solution
 def other_angle(a, b):
+    res = 180 - (a + b)
+    return res
+
+# My updated solution
+def other_angle(a, b):
     return 180 - (a + b)
