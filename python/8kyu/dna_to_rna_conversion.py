@@ -11,4 +11,11 @@ The input string can be of arbitrary length - in particular, it may be empty. Al
 
 # My solution
 def dna_to_rna(dna):
+    dn ="T"
+    for dn in dna:
+        if dn in dna:
+            return dna.replace("T", "U")
+
+# My updated solution
+def dna_to_rna(dna):
     return dna.replace('T', 'U')
