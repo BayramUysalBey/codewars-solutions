@@ -11,4 +11,12 @@ Your points are not included in the array of your class's points. Do not forget 
 
 # My solution
 def better_than_average(class_points, your_points):
+    res1 = sum(class_points) / len(class_points)
+    if res1 < your_points:
+        return True
+    else:
+        return False
+
+# My updated solution
+def better_than_average(class_points, your_points):
     return sum(class_points) / len(class_points) < your_points
