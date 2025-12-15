@@ -6,4 +6,9 @@ current age of his son (years)
 
 # My solution
 def twice_as_old(dad_years_old, son_years_old):
+    res = (2 * son_years_old) - dad_years_old
+    return abs(res)
+
+# My updated solution
+def twice_as_old(dad_years_old, son_years_old):
     return abs(2* son_years_old - dad_years_old)
