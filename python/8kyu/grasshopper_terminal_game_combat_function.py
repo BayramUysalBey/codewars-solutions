@@ -2,4 +2,12 @@
 
 # My solution
 def combat(health, damage):
+    res = health - damage
+    if res > 0:
+        return res
+    elif res <= 0:
+        return 0
+
+# My updated solution
+def combat(health, damage):
     return health - damage if health > damage else 0
