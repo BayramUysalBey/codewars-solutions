@@ -11,4 +11,11 @@ In this Kata, a string is said to be in ALL CAPS whenever it does not contain an
 
 # My solution
 def is_uppercase(inp):
+    if inp == inp.upper():
+        return True
+    else:
+        return False
+
+# My updated solution
+def is_uppercase(inp):
     return inp.upper()==inp
