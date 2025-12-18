@@ -8,5 +8,11 @@ Example(Input --> Output):
 
 # My solution
 def reverse_words(s):
+    res = s.split()
+    res1 = (res[::-1])
+    return " ".join(res1)
+
+# My updated solution
+def reverse_words(s):
     s_split = s.split()
     return " ".join(s_split[::-1])
