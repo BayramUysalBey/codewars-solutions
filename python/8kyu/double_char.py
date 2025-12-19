@@ -7,4 +7,11 @@ Examples (Input -> Output):
 
 # My solution
 def double_char(s):
+	character_list = []
+	for character in s:
+		character_list += [character * 2]
+	return "".join(character_list )
+
+# My updated solution
+def double_char(s):
     return ''.join(character * 2 for character in s)
