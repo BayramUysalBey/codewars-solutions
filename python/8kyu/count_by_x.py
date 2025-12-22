@@ -15,3 +15,6 @@ def count_by(x, n):
 		res.append(ey)
 	return res
 
+# My updated solution
+def count_by(x, n):
+    return [ey * x for ey in range(1, n + 1)]
