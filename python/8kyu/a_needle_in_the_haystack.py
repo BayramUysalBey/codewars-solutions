@@ -13,4 +13,11 @@ Note: In COBOL, it should return 'found the needle at position 6'"""
 
 # My solution
 def find_needle(haystack):
+    need = "needle"
+    for need in haystack:
+        if need in haystack:
+            return f"found the needle at position {haystack.index('needle')}"
+
+# My updated solution
+def find_needle(haystack):
     return f'found the needle at position {haystack.index("needle")}'
