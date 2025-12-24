@@ -4,4 +4,12 @@ However, there is a bug in the method that needs to be resolved."""
 
 # My solution
 def kata_13_december(lst): 
+    res = []
+    for char in lst: 
+        if  char %2 == 1: 
+            res.append(char)
+    return res
+
+# My updated solution
+def kata_13_december(lst): 
     return [x for x in lst if x % 2]
