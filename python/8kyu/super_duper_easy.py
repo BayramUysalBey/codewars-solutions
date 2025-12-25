@@ -2,4 +2,11 @@
 
 # My solution
 def problem(a):
+	if type(a) is str:
+		return "Error"
+	else:
+		return (a * 50) + 6
+
+# My updated solution
+def problem(a):
     return "Error" if a == str(a) else a * 50 + 6
