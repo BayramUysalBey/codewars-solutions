@@ -14,4 +14,11 @@ Good luck! Your team knows they can count on you!"""
 # My solution
 from decimal import Decimal
 def format_money(amount):
+    amount = float(amount)
+    res = round(Decimal(amount), 2)
+    return f"${res}"
+
+# My updated solution
+from decimal import Decimal
+def format_money(amount):
     return f"${round(Decimal(float(amount)), 2)}"
