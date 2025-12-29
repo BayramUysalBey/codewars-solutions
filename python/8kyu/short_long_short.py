@@ -10,5 +10,12 @@ For example: (Input1, Input2) --> output
 
 # My solution
 def solution(a, b):
+    if len(a) > len(b):
+        return b + a + b
+    elif len(b) > len(a):
+        return a + b + a
+
+# My updated solution
+def solution(a, b):
     if len(a)>len(b): return(b+a+b)
     else: return(a+b+a)
