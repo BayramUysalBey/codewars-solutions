@@ -20,6 +20,17 @@ Examples: (Input --> Output)
 
 # My solution
 def people_with_age_drink(age):
+    if  0 <= age < 14:
+        return "drink toddy"
+    elif 14 <= age < 18:
+        return "drink coke"
+    elif 18 <= age < 21:
+        return "drink beer"
+    elif age >= 21:
+        return "drink whisky"
+
+# My updated solution
+def people_with_age_drink(age):
     if age > 20: return 'drink whisky'
     if age > 17: return 'drink beer'
     if age > 13: return 'drink coke'
