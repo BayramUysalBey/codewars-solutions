@@ -4,5 +4,16 @@ A palindrome is a word, number, phrase, or other sequence of symbols that reads 
 
 # My solution
 def is_palindrome(s):
+    res = s.lower()
+    if res == res[::-1]:
+        return True
+    elif res == " ":
+        return True
+    else:
+        return False
+    return res
+
+# My updated solution
+def is_palindrome(s):
     s = s.lower()
     return s == s[::-1]
