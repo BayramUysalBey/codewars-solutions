@@ -7,5 +7,12 @@ Note! The input is a Real number (actual type is language dependent) and is >= 0
 
 # My solution
 from math import *
+
+def cockroach_speed(s):
+    res = s * 27.777778
+    return floor(res)
+
+# My updated solution
+from math import floor
 def cockroach_speed(s):
     return floor(s * 27.777778)
