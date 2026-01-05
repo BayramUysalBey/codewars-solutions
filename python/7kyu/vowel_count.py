@@ -6,6 +6,16 @@ The input string will only consist of lower case letters and/or spaces."""
 
 # My solution
 def get_count(sentence):
+	vowel = "aeiouAEIOU"
+	sentence = sentence.lower()
+	count = 0
+	for letter in sentence:
+		if letter in vowel:
+			count += 1
+	return count
+
+# My updated solution
+def get_count(sentence):
 	vowels = "aeiouAEIOU"
 	count = 0
 	for letter in sentence:
