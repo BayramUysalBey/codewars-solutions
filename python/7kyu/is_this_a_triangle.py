@@ -15,6 +15,17 @@ Input -> Output
 
 # My solution
 def is_triangle(a, b, c):
+	if abs(b - c) < a < b + c:
+		return True
+	elif abs(a - c) < b < a + c:
+		return True
+	elif abs(a - b) < c < a + b:
+		return True
+	elif a >= 0 or b >= 0 or c >= 0:
+		return False
+
+# My updated solution
+def is_triangle(a, b, c):
     if a <= 0 and b <= 0 and c <= 0:
         return False
     elif a + b <= c or a + c <= b or b + c <= a: 
