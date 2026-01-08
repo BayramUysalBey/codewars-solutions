@@ -7,3 +7,7 @@ def small_enough(array, limit):
     for num in array:
         if num > limit: return False   
     return True
+
+# My updated solution
+def small_enough(array, limit):
+    return max(array)<=limit
