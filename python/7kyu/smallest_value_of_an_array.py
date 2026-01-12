@@ -14,3 +14,7 @@ def find_smallest(numbers, to_return):
     for num in numbers:
         if num == min(numbers):
             return to_return == "value" and min(numbers) or to_return == "index" and numbers.index(min(numbers))
+
+# My updated solution
+def find_smallest(numbers,to_return):
+    return min(numbers) if to_return == 'value' else numbers.index(min(numbers))	
