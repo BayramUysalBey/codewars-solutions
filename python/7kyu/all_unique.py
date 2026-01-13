@@ -10,3 +10,7 @@ def has_unique_chars(string):
             return False
         seen.add(char)
     return True
+
+# My updated solution
+def has_unique_chars(string):
+    return len(string) == len(set(string))
