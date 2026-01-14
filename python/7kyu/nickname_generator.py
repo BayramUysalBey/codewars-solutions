@@ -47,3 +47,7 @@ def nickname_generator(name):
         return name[:4]
     else:
         return name[:3]
+    
+# My updated solution - II
+def nickname_generator(name):
+    return "Error: Name too short" if len(name) <= 3 else name[:3+(name[2] in "aeiuo")]
