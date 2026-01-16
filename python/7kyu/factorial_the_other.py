@@ -13,3 +13,10 @@ def factorial(n):
         raise ValueError
     else:
         return math.factorial(n)
+    
+# My updated solution
+import math
+def factorial(n):
+    if n < 0 or n > 12:
+        raise ValueError
+    return math.factorial(n)	
