@@ -8,3 +8,7 @@ Examples
 import re
 def remove_url_anchor(url):
   return re.sub(r'#.*', '', url)
+
+# My updated solution
+def remove_url_anchor(url):
+    return url.split('#')[0]
