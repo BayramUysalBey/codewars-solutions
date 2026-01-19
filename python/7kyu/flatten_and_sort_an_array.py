@@ -21,3 +21,7 @@ def flatten_and_sort(array):
     if array == []:
         return []
     return sorted([num for sublist in array for num in sublist])
+
+# My updated solution 2
+def flatten_and_sort(array):
+    return sorted([num for sublist in array for num in sublist])
