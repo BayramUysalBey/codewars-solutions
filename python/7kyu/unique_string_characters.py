@@ -21,3 +21,8 @@ def solve(a,b):
         if j not in a:
             result.append(j)
     return "".join(result)
+
+# My updated solution
+def solve(a,b):
+    result = set(a)&set(b)
+    return ''.join(c for c in a+b if c not in result)
