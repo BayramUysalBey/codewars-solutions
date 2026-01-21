@@ -18,3 +18,7 @@ def closest_multiple_10(i):
         return i - result
     elif result >= 5:
         return (i - result) + 10
+    
+# My updated solution
+def closest_multiple_10(i):
+    return round(i, -1)
