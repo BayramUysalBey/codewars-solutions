@@ -20,3 +20,7 @@ def candies(lst):
 	if len(lst) <= 1:
 		return -1
 	return sum(max(lst) - num for num in lst if num < max(lst))
+
+# My updated solution
+def candies(lst):
+    return sum(max(lst) - num for num in lst) if len(lst) > 1 else -1
