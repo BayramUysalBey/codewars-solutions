@@ -14,3 +14,8 @@ Incorrect examples (e.g. if you round the numbers):
 def two_decimal_places(number):
 	if number > 0: return number // 0.01 / 100
 	else: return -(abs(number) // 0.01 / 100)
+
+# My updated solution
+def two_decimal_places(number):
+    
+    return int (number * 100) / 100
