@@ -11,3 +11,7 @@ def modified_sum(a, n):
     result = []
     for number in a: result.append(number**n)
     return sum(result) - sum(a)
+
+# My updated solution
+def modified_sum(a, n):
+    return sum(number ** n - number for number in a)
