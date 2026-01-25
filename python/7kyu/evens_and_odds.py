@@ -8,3 +8,7 @@ Numbers will be positive. The hexadecimal string should be lowercased."""
 def evens_and_odds(n):
     if n % 2 == 0: return str(int(bin(n)[2:]))
     else: return str(hex(n).split('x')[-1])
+    
+# My updated solution
+def evens_and_odds(n):
+    return hex(n)[2:] if n % 2 else bin(n)[2:]
