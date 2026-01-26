@@ -17,3 +17,7 @@ def two_oldest_ages(ages):
 def two_oldest_ages(ages):
     s_ages = sorted(ages)
     return s_ages[-2:]
+
+# My updated solution 2
+def two_oldest_ages(ages):
+    return sorted(ages)[-2:]
