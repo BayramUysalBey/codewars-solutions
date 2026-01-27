@@ -21,3 +21,7 @@ def filter_string(st):
 def filter_string(st):
     numbers = "0123456789"
     return int("".join(char for char in st if char in numbers))
+
+# My updated solution 2
+def filter_string(st):    
+    return int("".join(char for char in st if char.isdigit()))
