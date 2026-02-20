@@ -23,3 +23,7 @@ def group_by_commas(n):
         joined = ','.join(groups)
         result = joined[::-1]
         return result
+    
+# My updated solution
+def group_by_commas(n):
+    return f"{n:,}"
