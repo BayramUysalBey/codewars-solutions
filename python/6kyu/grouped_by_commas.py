@@ -13,7 +13,7 @@ Examples
 35235235  ->  "35,235,235" '''
 
 # My solution
-def group_by_commas(n):
+def group_by_comma(n):
     s = str(n)
     if len(s) <= 3:
         return s
