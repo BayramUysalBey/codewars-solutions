@@ -8,3 +8,7 @@ Don't forget to rate this kata! Thanks :)'''
 # My solution
 def camel_case(s):
     return "".join(word.capitalize() for word in s.split())
+
+# My updated solution
+def camel_case(string):
+    return string.title().replace(" ", "")
