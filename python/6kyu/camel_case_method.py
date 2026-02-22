@@ -10,5 +10,5 @@ def camel_case(s):
     return "".join(word.capitalize() for word in s.split())
 
 # My updated solution
-def camel_case(string):
+def camel_cases(string):
     return string.title().replace(" ", "")
