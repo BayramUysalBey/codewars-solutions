@@ -19,3 +19,7 @@ def duplicate_count(text):
             result += 1
             counted.add(char)
     return result
+
+# My updated solution
+def duplicate_counts(text):
+    return len([char for char in set(text.lower()) if text.lower().count(char)>1])
