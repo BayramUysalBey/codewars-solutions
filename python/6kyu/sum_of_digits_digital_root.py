@@ -13,3 +13,7 @@ def digital_root(n):
     if n == 0:
         return 0
     return (n - 1) % 9 + 1
+
+# My updated solution
+def digital_roots(n):
+    return (n-1) % 9 + 1 if n else 0
