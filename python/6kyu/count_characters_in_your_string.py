@@ -10,3 +10,9 @@ def count(s):
     for char in s:
         result[char] = result.get(char, 0) + 1
     return result
+
+# My updated solution
+from collections import Counter
+
+def counts(string):
+    return Counter(string)
