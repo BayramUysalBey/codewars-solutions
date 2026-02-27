@@ -11,3 +11,7 @@ def count_bits(n):
         if char == "1":
             result += int(char)
     return result
+
+# My updated solution
+def countBits(n):
+    return bin(n).count("1")
